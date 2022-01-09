@@ -3,7 +3,7 @@
         <h2><?php echo $pageData['title']?></h2>
     </div>
     <table class="table table-striped text-center table-bordered">
-        <caption>Klientus, kuriem bija dažādi piegādes tipi uz vienu adresi, gan šķidrās preces, gan cietās.</caption>
+        <caption>Saraksts ar pēdējām piegādēm.</caption>
         <thead class="table-dark">
             <tr>
                 <th scope="col">Klienta nosaukums</th>

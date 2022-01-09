@@ -20,7 +20,8 @@ class NonActiveClientsModel extends Model
                     ON A.ClientID = C.ID
                 INNER JOIN Deliveries D
                     ON D.AddressID = A.ID
-                WHERE D.Type <> 1";
+                WHERE D.Type <> 1
+                GROUP BY C.Name, A.Title";
         $stmt = $this->db->prepare($sql);
 
         $stmt->execute();
