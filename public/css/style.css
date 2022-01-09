@@ -1,0 +1,41 @@
+nav {
+  padding: 10px 20px !important;
+}
+
+.nav-item {
+  padding-top: 3px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.title {
+  width: 100%;
+  border-bottom: 2px solid black;
+  margin: 10px 0 30px 0;
+}
+
+.clients-list {
+  border-right: 2px solid black;
+  border-radius: 0% !important;
+  padding: 0 !important;
+  height: 93.3vh;
+}
+.clients-list .client-name {
+  margin-top: 5px;
+}
+.clients-list .btn {
+  font-size: 14px !important;
+  width: 120px;
+  height: 35px;
+}
+.clients-list .btn-primary {
+  width: 140px;
+}
+
+/*# sourceMappingURL=style.css.map */
