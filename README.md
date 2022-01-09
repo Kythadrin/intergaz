@@ -6,7 +6,7 @@
   3. How to launch project?
 
 ## About project
-  Is a database that contains information about the company's activities. The company supplies goods to customers, each customer can have multiple delivery locations. The delivery order consists of general information (Address, type, status and so on) and delivery lines (item, quantity, price, etc.). Deliveries are grouped on routes, there is always one driver on the same route and the journey takes place on a specific date.
+  Is a database that contains information about the company's activities. The company supplies goods to customers, each customer can have multiple delivery locations. The delivery order consists of general information (Address, type, status and etc.) and delivery lines (item, quantity, price, etc.). Deliveries are grouped on routes, there is always one driver on the same route and the journey takes place on a specific date.
 
 ## What was used in the project
   - Visual Studio Code v1.63.1
