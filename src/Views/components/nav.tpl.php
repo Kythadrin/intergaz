@@ -1,19 +1,25 @@
 <body onload="setActiveNavItem()">
 <div id="wrapper" class="wrapper">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a href="/" class="navbar-brand">Integaz</a>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="/" class="nav-link">Klientu saraksts</a>
-            </li>
-            <li class="nav-item">
-                <a href="/delivery_types" class="nav-link">Pasūtījumu tipi</a>
-            </li>
-            <li class="nav-item">
-                <a href="/last_delivery" class="nav-link">Pēdējā piegāde</a>
-            </li>
-            <li class="nav-item">
-                <a href="/non_active_clients" class="nav-link">Neaktīvie klienti</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Integaz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-aut">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Klientu saraksts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/delivery_types">Pasūtījumu tipi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/last_delivery">Pēdējā piegāde</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/non_active_clients">Neaktīvie klienti</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
