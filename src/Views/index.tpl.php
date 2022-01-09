@@ -21,8 +21,9 @@
         </ul>
         <div class="col" id="clientAddress">
             <div class="title">
-                <h2>Client Addresses:</h2>
+                <h2>Klientu adreses:</h2>
             </div>
+            <p>Lai skatītu, noklikšķiniet uz pogas "Parādīt adreses" blakus klienta vārdam.</p>
         </div>
     </div>
 </div>

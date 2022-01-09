@@ -14,7 +14,6 @@
         <h1><b>404<br>Not found</b></h1>
         <p class="font-weight-bold">The recource requested could not be found on this server</p>
     </div>
-
 </div>
 </body>
 </html>
