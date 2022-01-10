@@ -1,6 +1,7 @@
+DirectoryIndex public/index.php
+
 RewriteEngine on
-RewriteBase /
+RewriteBase /intergaz/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule !dist - [F]
-RewriteRule ^(.*)$ public/index.php?$1 [L,QSA]
+RewriteRule . /public/index.php
