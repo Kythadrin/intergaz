@@ -1,6 +1,10 @@
 <?php
 
-class errorpageController extends Controller
+namespace Intergaz\Controllers;
+
+use Intergaz\Views\View;
+
+class ErrorpageController extends Controller
 {
     private $pageTpl = '/src/Views/404page.tpl.php';
 

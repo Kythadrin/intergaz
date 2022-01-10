@@ -1,5 +1,9 @@
 <?php
 
+namespace Intergaz\Models;
+
+use PDO;
+
 class NonActiveClientsModel extends Model 
 {
     public function getNonActiveClients()

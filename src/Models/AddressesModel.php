@@ -1,5 +1,9 @@
 <?php
 
+namespace Intergaz\Models;
+
+use PDO;
+
 class AddressesModel extends Model 
 {
     public function getAddresses($client)

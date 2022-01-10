@@ -1,5 +1,10 @@
 <?php
 
+namespace Intergaz\Controllers;
+
+use Intergaz\Models\LastDeliveryModel;
+use Intergaz\Views\View;
+
 class LastDeliveryController extends Controller
 {
     private $pageTpl = '/src/Views/last-delivery.tpl.php';

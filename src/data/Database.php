@@ -1,5 +1,10 @@
 <?php
 
+namespace Intergaz\Data;
+
+use PDO;
+use PDOException;
+
 class Database
 {
     public static function connect()

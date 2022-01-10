@@ -1,5 +1,7 @@
 <?php
 
+namespace Intergaz\Views;
+
 class View 
 {
     public function render($tpl, $pageData)

@@ -1,5 +1,10 @@
 <?php
 
+namespace Intergaz\Controllers;
+
+use Intergaz\Models\DeliveryTypesModel;
+use Intergaz\Views\View;
+
 class DeliveryTypesController extends Controller
 {
     private $pageTpl = '/src/Views/delivery-types.tpl.php';

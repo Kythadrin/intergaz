@@ -1,5 +1,9 @@
 <?php
 
+namespace Intergaz\Models;
+
+use PDO;
+
 class LastDeliveryModel extends Model 
 {
     public function getLast10Deliveries() 

@@ -1,5 +1,9 @@
 <?php
 
+namespace Intergaz\Models;
+
+use PDO;
+
 class DeliveryTypesModel extends Model 
 {
     public function getClientsWith2Types()

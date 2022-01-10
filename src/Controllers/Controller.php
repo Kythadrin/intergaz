@@ -1,5 +1,9 @@
 <?php
 
+namespace Intergaz\Controllers;
+
+use Intergaz\Views\View;
+
 abstract class Controller 
 {
     protected $view;

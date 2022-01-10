@@ -1,5 +1,10 @@
 <?php
 
+namespace Intergaz\Controllers;
+
+use Intergaz\Models\IndexModel;
+use Intergaz\Views\View;
+
 class IndexController extends Controller
 {
     private $pageTpl = '/src/Views/index.tpl.php';

@@ -1,5 +1,10 @@
 <?php
 
+namespace Intergaz\Controllers;
+
+use Intergaz\Models\NonActiveClientsModel;
+use Intergaz\Views\View;
+
 class NonActiveClientsController extends Controller
 {
     private $pageTpl = '/src/Views/non-active-clients.tpl.php';

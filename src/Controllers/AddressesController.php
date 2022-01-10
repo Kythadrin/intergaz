@@ -1,5 +1,10 @@
 <?php
 
+namespace Intergaz\Controllers;
+
+use Intergaz\Models\AddressesModel;
+use Intergaz\Views\View;
+
 class AddressesController extends Controller
 {
     private $pageTpl = '/src/Views/addresses.tpl.php';

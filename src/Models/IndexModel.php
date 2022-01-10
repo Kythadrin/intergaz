@@ -1,5 +1,9 @@
 <?php
 
+namespace Intergaz\Models;
+
+use PDO;
+
 class IndexModel extends Model 
 {
     public function getClients()

@@ -1,5 +1,9 @@
 <?php
 
+namespace Intergaz\Models;
+
+use PDO;
+
 class DeliveryModel extends Model 
 {
     public function getClientInfo($id) 
@@ -33,7 +37,7 @@ class DeliveryModel extends Model
 
         $stmt->execute();
 
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $result = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
         foreach ($result as $key => $value) { 
             switch($result[$key]['Status']) {
