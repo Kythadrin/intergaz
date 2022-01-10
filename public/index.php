@@ -4,7 +4,7 @@ require_once ROOT . '/vendor/autoload.php';
 
 session_start();
 
-$controllerName = "Intergaz\Controllers\\" . getControllerName();
+$controllerName = getController();
 
 $controller = new $controllerName;
 $controller->loadPage();

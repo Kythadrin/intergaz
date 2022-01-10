@@ -7,9 +7,9 @@ define("DB_USER", '');
 define("DB_PASSWORD", '');
 define("DB_NAME", 'intergaz');
 
-function getControllerName() 
+function getController() 
 {
-    $controllerName = "IndexController";
+    $controllerName = "Intergaz\Controllers\\IndexController";
 
     $route = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
@@ -28,8 +28,12 @@ function getControllerName()
                 $name = ucfirst($route[1]);
             }
 
-            $controllerName = $name . "Controller";
+            $controllerName = "Intergaz\Controllers\\" . $name . "Controller";
         }
+    }
+
+    if (!class_exists($controllerName)) {
+        $controllerName = "Intergaz\Controllers\\ErrorpageController";
     }
 
     return $controllerName;
