@@ -4,10 +4,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Intergaz\\": "src/",
-            "Intergaz\\Controllers\\": "src/Controllers/",
-            "Intergaz\\Models\\": "src/Models/",
-            "Intergaz\\Views\\": "src/Views/"
+            "Intergaz\\": "src/"
         }
     },
     "authors": [
