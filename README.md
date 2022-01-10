@@ -14,6 +14,7 @@
   - PHP v7.4
   - JavaScript
   - Apache v2.4
+  - T-SQL
   - SQL Server Management Studio v15.0.18390.0
   - Microsoft SQL Server 
   - SCSS v3.5.5
