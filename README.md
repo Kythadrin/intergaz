@@ -23,7 +23,7 @@
 ## How to launch project?
   1. Clone this repository or download them.
   2. Put project in server folder. I'm use OpenServer and this path to folder where need put project: *"C:\openserver\domains\"*. You can use some other server.
-  3. Change project config. In *[database config](https://github.com/Kythadrin/intergaz/blob/eac7224718b13e9e7f3e92f168f6efa40c706992/conf/Config.php#L8)* set database connection information(*set hostname, username, password and database name*).
+  3. Change project config. In *[database config](https://github.com/Kythadrin/intergaz/blob/37175517d033ad0d0d128954d0086cc89aeb1a12/conf/Config.php#L4)* set database connection information(*set hostname, username, password and database name*).
   4. Open terminal in project folder and start command ***composer install***.
   5. Start server or restart.
   6. Open browser and write in the address bar data to connect. For OpenServer it is folder name of project, for others it is usually: *localhost*. 
