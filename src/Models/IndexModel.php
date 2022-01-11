@@ -27,16 +27,4 @@ class IndexModel extends Model
         
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-
-    public function getClientName($id)
-    {
-        $sql = "SELECT Name FROM Clients WHERE ID LIKE :id";
-        $stmt = $this->db->prepare($sql);
-
-        $stmt->bindParam(':id', $id, PDO::PARAM_STR);
-
-        $stmt->execute();
-
-        return $stmt->fetchColumn();
-    }
 }
