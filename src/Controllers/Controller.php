@@ -20,7 +20,7 @@ abstract class Controller
                 <caption>' . $caption . '</caption>
                 <thead class="table-dark">
                     <tr>';
-                    
+
         foreach ($data[0] as $key=>$value) {
             echo '<th scope="col">'. $key . '</th>';
         }
@@ -48,14 +48,14 @@ abstract class Controller
     public function displayDataAsList($data)
     {
         if (!empty($data)) {
+            echo '<ol id="addresses" class="list-group list-group-numbered">';
             foreach ($data as $row) {
-                echo '<ol id="addresses" class="list-group list-group-numbered">';
                 foreach ($row as $item)
                 {
                     echo '<li class="list-group-item">' . $item;
                 }
-                echo '</ol>';
             }
+            echo '</ol>';
         }
     }
 
