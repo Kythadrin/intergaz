@@ -9,9 +9,13 @@ class Database
 {
     public static function connect()
     {
+        $db = parse_ini_file(ROOT . "/conf/database.ini");
+
         try {
-            $connection = new PDO('sqlsrv:server=(' . DB_HOST . ');database=' . DB_NAME, DB_USER, DB_PASSWORD);
+            $dsn = 'sqlsrv:Server=(' . $db['host'] . ');Database=' . $db['database'];
+            $connection = new PDO($dsn, $db['user'], $db['password']);
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            
         } catch (PDOException $e) {
             print $e->getMessage();
         }
