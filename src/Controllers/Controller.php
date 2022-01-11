@@ -9,6 +9,8 @@ abstract class Controller
     protected $view;
     protected $pageData = array();
     
+    abstract public function loadPage();
+
     public function __construct()
     {
         $this->view = new View();
@@ -26,13 +28,13 @@ abstract class Controller
         }
 
         echo '
-                </tr>
-            </thead>
-            <tbody>';
+                    </tr>
+                </thead>
+                <tbody>';
 
         foreach ($data as $row) {
             echo '<tr>';
-            foreach ($row as $item=>$value) {
+            foreach ($row as $item => $value) {
                 echo '<td>' . $value;
                 if ($item == 'Preces summa' || $item == 'Preču summa') {
                     echo ' €</td>';
@@ -60,6 +62,4 @@ abstract class Controller
             echo '</ol>';
         }
     }
-
-    abstract public function loadPage();
 }

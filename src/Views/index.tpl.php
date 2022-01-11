@@ -2,7 +2,7 @@
     <div class="row">
         <ul class="col-xl-3 col-lg-4 col-md-5 col-sm-4 col-6 list-group clients-list overflow-auto">
             <?php 
-                $controller->displayClients();
+                $controller->displayDataAsList($pageData['clients']);
             ?>
         </ul>
         <div class="col" id="clientAddress">
