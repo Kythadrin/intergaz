@@ -45,15 +45,17 @@ abstract class Controller
             </table>';
     }
 
-    public function displayDataAsList($data)
+    public function displayDataAsList($data, $delimeter = ' ')
     {
         if (!empty($data)) {
             echo '<ol id="addresses" class="list-group list-group-numbered">';
             foreach ($data as $row) {
+                echo '<li class="list-group-item">';
                 foreach ($row as $item)
                 {
-                    echo '<li class="list-group-item">' . $item;
+                    echo $item . ' ' . $delimeter . ' ';
                 }
+                echo '</li>';
             }
             echo '</ol>';
         }
