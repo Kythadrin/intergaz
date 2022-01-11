@@ -31,8 +31,11 @@ abstract class Controller
 
         foreach ($data as $row) {
             echo '<tr>';
-            foreach ($row as $item) {
-                echo '<td>' . $item . '</td>'; 
+            foreach ($row as $item=>$value) {
+                echo '<td>' . $value;
+                if ($item == 'Preces summa' || $item == 'Preču summa') {
+                    echo ' €</td>';
+                } 
             }
             echo '</tr>';
         } 
