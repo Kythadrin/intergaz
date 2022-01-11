@@ -8,7 +8,7 @@ class NonActiveClientsModel extends Model
 {
     public function getNonActiveClients()
     {
-        $sql = "SELECT C.Name, A.Title
+        $sql = "SELECT C.Name AS 'Klienta nosaukums', A.Title AS 'Piegādes adrese'
                 FROM Clients C
                 INNER JOIN 
                     (SELECT C.ID

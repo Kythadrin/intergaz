@@ -8,7 +8,7 @@ class DeliveryTypesModel extends Model
 {
     public function getClientsWith2Types()
     {
-        $sql = "SELECT C.Name, A.Title
+        $sql = "SELECT C.Name AS 'Klienta nosaukums', A.Title AS 'Piegādes adrese'
                 FROM Clients C
                 INNER JOIN Addresses A
                     ON A.ClientID = C.ID

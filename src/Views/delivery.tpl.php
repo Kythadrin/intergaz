@@ -10,20 +10,8 @@
             </div>
         </div>
     </div>
-    <table class="table table-striped text-center table-bordered">
-        <caption>Klientu piegādes</caption>
-        <thead class="table-dark">
-            <tr>
-                <th scope="col">Piegādes adrese</th>
-                <th scope="col">Piegādes datums</th>
-                <th scope="col">Preču summa</th>
-                <th scope="col">Piegādes status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-                $controller->displayDataAsTable($pageData['deliveries']);
-            ?>
-        </tbody>
-    </table>
+    <?php
+        $caption = 'Klientu piegādes';
+        $controller->displayDataAsTable($pageData['deliveries'], $caption);
+    ?>
 </div>

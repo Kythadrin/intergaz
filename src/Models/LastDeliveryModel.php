@@ -8,7 +8,7 @@ class LastDeliveryModel extends Model
 {
     public function getLast10Deliveries() 
     {
-        $sql = "SELECT TOP 10 C.Name, A.Title, DL.Item, CONVERT(decimal(10, 2), DL.Price) AS Price
+        $sql = "SELECT TOP 10 C.Name AS 'Klienta nosaukums', A.Title AS 'Piegādes adrese', DL.Item AS 'Prece', CONVERT(decimal(10, 2), DL.Price) AS 'Preces summa'
                 FROM Clients C
                 INNER JOIN Addresses A
                     ON A.ClientID = C.ID

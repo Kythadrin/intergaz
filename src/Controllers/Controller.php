@@ -14,8 +14,21 @@ abstract class Controller
         $this->view = new View();
     }
 
-    public function displayDataAsTable($data)
+    public function displayDataAsTable($data, $caption = '')
     {
+        echo '<table class="table table-striped text-center table-bordered">
+                <caption>' . $caption . '</caption>
+                <thead class="table-dark">
+                    <tr>';
+        foreach ($data[0] as $key=>$value) {
+            echo '<th scope="col">'. $key . '</th>';
+        }
+
+        echo '
+                </tr>
+            </thead>
+            <tbody>';
+
         foreach ($data as $row) {
             echo '<tr>';
             foreach ($row as $item) {
@@ -23,16 +36,21 @@ abstract class Controller
             }
             echo '</tr>';
         } 
+
+        echo '</tbody>
+            </table>';
     }
 
     public function displayDataAsList($data)
     {
         if (!empty($data)) {
             foreach ($data as $row) {
+                echo '<ol id="addresses" class="list-group list-group-numbered">';
                 foreach ($row as $item)
                 {
                     echo '<li class="list-group-item">' . $item;
                 }
+                echo '</ol>';
             }
         }
     }

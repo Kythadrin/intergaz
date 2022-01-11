@@ -20,7 +20,8 @@ class DeliveryModel extends Model
 
     public function getDeliveries($client) 
     {
-        $sql = "SELECT A.Title, FORMAT(R.Date, 'dd/MM/yy') AS Date, CONVERT(decimal(10, 2), DL.Price) AS Price , D.Status
+        $sql = "SELECT A.Title AS 'Piegādes adrese', FORMAT(R.Date, 'dd/MM/yy') AS 'Piegādes datums', 
+                CONVERT(decimal(10, 2), DL.Price) AS 'Preču summa', D.Status AS 'Piegādes status'
                 FROM Clients C
                 INNER JOIN Addresses A
                     ON (A.ClientID = C.ID)
@@ -37,18 +38,18 @@ class DeliveryModel extends Model
 
         $stmt->execute();
 
-        $result = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($result as $key => $value) { 
-            switch($result[$key]['Status']) {
+            switch($result[$key]['Piegādes status']) {
                 case '1': 
-                    $result[$key]['Status'] = 'nav izpildīts';
+                    $result[$key]['Piegādes status'] = 'nav izpildīts';
                     break;
                 case '2': 
-                    $result[$key]['Status'] = 'ir izpildīts';
+                    $result[$key]['Piegādes status'] = 'ir izpildīts';
                     break;
                 case '3': 
-                    $result[$key]['Status'] = 'atcelts';
+                    $result[$key]['Piegādes status'] = 'atcelts';
                     break;
             }
         }

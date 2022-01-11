@@ -8,7 +8,7 @@ class AddressesModel extends Model
 {
     public function getClientName($id)
     {
-        $sql = "SELECT Name FROM Clients WHERE ID LIKE :id";
+        $sql = "SELECT Name AS 'Klienta nosaukums' FROM Clients WHERE ID LIKE :id";
         $stmt = $this->db->prepare($sql);
 
         $stmt->bindParam(':id', $id, PDO::PARAM_STR);
@@ -20,7 +20,7 @@ class AddressesModel extends Model
     
     public function getAddresses($client)
     {
-        $sql = "SELECT Title FROM Addresses WHERE ClientID LIKE :client";
+        $sql = "SELECT Title AS 'Piegādes adrese' FROM Addresses WHERE ClientID LIKE :client";
         $stmt = $this->db->prepare($sql);
         
         $stmt->bindParam(':client', $client, PDO::PARAM_STR);
