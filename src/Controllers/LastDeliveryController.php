@@ -21,6 +21,7 @@ class LastDeliveryController extends Controller
         $this->pageData['title'] = "Pēdējā piegāde";
         $this->pageData['deliveries'] = $this->model->getLast10Deliveries();
        
-        $this->view->render($this->pageTpl, $this->pageData);
+        $this->view->render($this->pageTpl, $this->pageData, $this);
     }
+
 }

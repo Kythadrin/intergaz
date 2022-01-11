@@ -21,6 +21,6 @@ class NonActiveClientsController extends Controller
         $this->pageData['title'] = "Neaktīvie klienti";
         $this->pageData['clients'] = $this->model->getNonActiveClients();
        
-        $this->view->render($this->pageTpl, $this->pageData);
+        $this->view->render($this->pageTpl, $this->pageData, $this);
     }
 }

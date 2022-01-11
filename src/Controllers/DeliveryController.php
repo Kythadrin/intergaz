@@ -23,7 +23,7 @@ class DeliveryController extends Controller
             $this->pageData['clientInfo'] = $this->model->getClientInfo($_GET['client']);
             $this->pageData['deliveries'] = $this->model->getDeliveries($_GET['client']);
 
-            $this->view->render($this->pageTpl, $this->pageData);
+            $this->view->render($this->pageTpl, $this->pageData, $this);
         } else {
             $this->pageData['title'] = "404 error";
             $this->pageTpl = '/src/Views/404page.tpl.php';

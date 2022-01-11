@@ -4,7 +4,7 @@ namespace Intergaz\Views;
 
 class View 
 {
-    public function render($tpl, $pageData)
+    public function render($tpl, $pageData, $controller = null)
     {
         include ROOT . '/src/Views/components/header.tpl.php';
         include ROOT . '/src/Views/components/nav.tpl.php';
@@ -12,7 +12,7 @@ class View
         include ROOT . '/src/Views/components/footer.tpl.php';
     }
 
-    public function renderWithoutNav($tpl, $pageData)
+    public function renderWithoutNav($tpl, $pageData, $controller = null)
     {
         include ROOT . '/src/Views/components/header.tpl.php';
         include ROOT . $tpl;

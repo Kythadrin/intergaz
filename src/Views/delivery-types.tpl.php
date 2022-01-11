@@ -12,12 +12,7 @@
         </thead>
         <tbody>
             <?php
-            foreach ($pageData['clients'] as $client) {
-                echo '<tr>';
-                echo '<td>' . $client['Name'] . '</td>'; 
-                echo '<td>' . $client['Title'] . '</td>';
-                echo '</tr>';
-            } 
+                $controller->displayDataAsTable($pageData['clients']);
             ?>
         </tbody>
     </table>

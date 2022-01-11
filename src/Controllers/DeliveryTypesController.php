@@ -21,6 +21,6 @@ class DeliveryTypesController extends Controller
         $this->pageData['title'] = "Pasūtījumu tipi";
         $this->pageData['clients'] = $this->model->getClientsWith2Types();
        
-        $this->view->render($this->pageTpl, $this->pageData);
+        $this->view->render($this->pageTpl, $this->pageData, $this);
     }
 }

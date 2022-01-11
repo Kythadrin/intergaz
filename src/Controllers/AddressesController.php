@@ -22,11 +22,13 @@ class AddressesController extends Controller
             $this->pageData['title'] = "Klientu saraksts";
             $this->pageData['client-name'] = $this->model->getClientName($_GET['client']);
             $this->pageData['addresses'] = $this->model->getAddresses($_GET['client']);
+
+            $this->view->renderWithoutNav($this->pageTpl, $this->pageData, $this);
         } else {
             $this->pageData['title'] = "404 error";
             $this->pageTpl = '/src/Views/404page.tpl.php';
-        }
 
-        $this->view->renderWithoutNav($this->pageTpl, $this->pageData);
+            $this->view->renderWithoutNav($this->pageTpl, $this->pageData);
+        }
     }
 }

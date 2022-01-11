@@ -22,14 +22,7 @@
         </thead>
         <tbody>
             <?php
-            foreach ($pageData['deliveries'] as $delivery) {
-                echo '<tr>';
-                echo '<td>' . $delivery['Title'] . '</td>'; 
-                echo '<td>' . $delivery['Date'] . '</td>';
-                echo '<td>' . $delivery['Price'] . ' €</td>';
-                echo '<td>' . $delivery['Status'] . '</td>';
-                echo '</tr>';
-            } 
+                $controller->displayDataAsTable($pageData['deliveries']);
             ?>
         </tbody>
     </table>

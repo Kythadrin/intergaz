@@ -14,14 +14,7 @@
         </thead>
         <tbody>
             <?php
-            foreach ($pageData['deliveries'] as $delivery) {
-                echo '<tr>';
-                echo '<td>' . $delivery['Name'] . '</td>'; 
-                echo '<td>' . $delivery['Title'] . '</td>';
-                echo '<td>' . $delivery['Item'] . '</td>';
-                echo '<td>' . $delivery['Price'] . ' €</td>';
-                echo '</tr>';
-            } 
+                $controller->displayDataAsTable($pageData['deliveries']);
             ?>
         </tbody>
     </table>
