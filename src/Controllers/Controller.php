@@ -20,6 +20,7 @@ abstract class Controller
                 <caption>' . $caption . '</caption>
                 <thead class="table-dark">
                     <tr>';
+                    
         foreach ($data[0] as $key=>$value) {
             echo '<th scope="col">'. $key . '</th>';
         }
