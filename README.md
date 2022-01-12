@@ -24,7 +24,7 @@
   1. Clone this repository or download them.
   2. Put project in server folder. I'm use OpenServer and this path to folder where need put project: *"C:\openserver\domains\"*. You can use some other server.
   3. Upload database.
-  4. Change project config. In *[database config](https://github.com/Kythadrin/intergaz/blob/37175517d033ad0d0d128954d0086cc89aeb1a12/conf/Config.php#L4)* set database connection information(*set hostname, username, password and database name*).
+  4. Change database config. In *[database config](https://github.com/Kythadrin/intergaz/blob/3619e330485d8a00dd97e57039c004f571c73b00/conf/database.ini#L1)* set database connection information(*set hostname, username, password and database name*).
   5. Open terminal in project folder and start command ***composer install*** and ****composer dump-autoload -o***.
   6. Start server or restart.
   7. Open browser and write in the address bar data to connect. For OpenServer it is folder name of project, for others it is usually: *localhost*. 
